@@ -18,6 +18,7 @@ class AppContainer extends HTMLElement {
 		if (this.shadowRoot) this.shadowRoot.innerHTML = `
 		<task-form></task-form>
 		<task-list></task-list>
+		<task-item></task-item>
         
 		`;
 //llama al componente que solo tiene el form y luego llama al array o al componente que tiene el listado de las tareas qu fuero agregadas en el form

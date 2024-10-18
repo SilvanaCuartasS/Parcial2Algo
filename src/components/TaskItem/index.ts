@@ -3,14 +3,21 @@ import { addObserver, dispatch } from "../../store/store";
 
 export enum TaskItemProps {
 	'uid' = 'uid',
-	'tasktitle' = 'tasktitle',
-	'state' = 'state',
+	'name' = 'name',
+	'price' = 'price',
+    'category' = 'category',
+    'description' = 'description',
+    'image' = 'image',
+    'state' = 'state',
 }
 
 class TaskItem extends HTMLElement {
 	uid?: number;
-	tasktitle?: string;
-	state?: boolean;
+    name?: string;
+	price?: number;
+	category?: string;
+    description?: string;
+    image?: string;
 
 	constructor() {
 		super();

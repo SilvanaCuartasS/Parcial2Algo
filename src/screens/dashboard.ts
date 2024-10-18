@@ -8,8 +8,6 @@ import { getProducts } from "../services/getProducts";
 
 class Dashboard extends HTMLElement {
 
-    products: Product[] = [];
-    shoppingCart: ShoppingCartItem[] = [];
 	dataProducts: any[] = [];
 
 	constructor() {
@@ -21,8 +19,6 @@ class Dashboard extends HTMLElement {
 
 	async connectedCallback() {
 		this.dataProducts = await getProducts();
-		this.createCardsProduct();
-		this.createCardsShoppingItem();
 		this.render();
 	}
 
